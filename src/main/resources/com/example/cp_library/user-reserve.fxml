@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<HBox prefHeight="720.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cp_library.UserReserve">
+    <children>
+        <TableView fx:id="bookTable" prefHeight="720.0" prefWidth="720.0">
+            <columns>
+                <TableColumn prefWidth="216" text="Author">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="author" />
+                    </cellValueFactory>
+                </TableColumn>
+
+                <TableColumn prefWidth="216" text="Title">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="title" />
+                    </cellValueFactory>
+                </TableColumn>
+
+                <TableColumn prefWidth="216" text="ISBN">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="isbn" />
+                    </cellValueFactory>
+                </TableColumn>
+            </columns>
+
+        </TableView>
+        <AnchorPane prefWidth="240">
+            <Button layoutX="40.0" layoutY="188.0" maxWidth="Infinity" onAction="#reserveBook" prefHeight="26.0" prefWidth="160.0" text="Reserve Book" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button layoutX="40.0" layoutY="239.0" maxWidth="Infinity" onAction="#backToUser" prefHeight="26.0" prefWidth="160.0" text="Back" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+            <Label fx:id="messageReserve" layoutX="40.0" layoutY="397.0" prefHeight="18.0" prefWidth="169.0" />
+        </AnchorPane>
+    </children>
+</HBox>

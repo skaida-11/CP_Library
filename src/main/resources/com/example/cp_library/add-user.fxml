@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cp_library.UserAdd">
+    <children>
+
+        <Label layoutX="82.0" layoutY="64.0" prefHeight="18.0" prefWidth="63.0" text="ID" />
+        <Label fx:id="id" layoutX="82.0" layoutY="82.0" prefHeight="26.0" prefWidth="290.0" />
+        <Label layoutX="82.0" layoutY="108.0" prefHeight="18.0" prefWidth="48.0" text="Name" />
+        <TextField fx:id="name" layoutX="82.0" layoutY="126.0" prefHeight="26.0" prefWidth="290.0" />
+        <Label layoutX="82.0" layoutY="156.0" prefHeight="18.0" prefWidth="63.0" text="Email" />
+        <TextField fx:id="email" layoutX="82.0" layoutY="174.0" prefHeight="26.0" prefWidth="290.0" />
+        <Label layoutX="82.0" layoutY="200.0" prefHeight="18.0" prefWidth="83.0" text="Password" />
+        <TextField fx:id="password" layoutX="82.0" layoutY="218.0" prefHeight="26.0" prefWidth="290.0" />
+        <Label layoutX="83.0" layoutY="252.0" prefHeight="18.0" prefWidth="132.0" text="Password again" />
+        <TextField fx:id="passwordAgain" layoutX="82.0" layoutY="270.0" prefHeight="26.0" prefWidth="290.0" />
+        <Button layoutX="420.0" layoutY="82.0" mnemonicParsing="false" onAction="#addNewUser" text="Add" />
+        <Button fx:id="backButton" layoutX="420.0" layoutY="153.0" mnemonicParsing="false" onAction="#backToUser" text="Back" />
+        <Label fx:id="addMessage" layoutX="82.0" layoutY="337.0" prefHeight="26.0" prefWidth="518.0" />
+    </children>
+</AnchorPane>

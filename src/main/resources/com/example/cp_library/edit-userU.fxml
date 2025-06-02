@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cp_library.UserEdit">
+    <children>
+        <Label layoutX="82.0" layoutY="64.0" prefHeight="18.0" prefWidth="63.0" text="Email" />
+        <TextField fx:id="editEmail" layoutX="82.0" layoutY="82.0" prefHeight="26.0" prefWidth="290.0" />
+        <Label layoutX="82.0" layoutY="33.0" prefHeight="18.0" prefWidth="48.0" text="ID" />
+        <TextField fx:id="editName" layoutX="83.0" layoutY="153.0" prefWidth="290.0" />
+        <Label layoutX="82.0" layoutY="200.0" prefHeight="18.0" prefWidth="63.0" text="Password" />
+        <TextField fx:id="editPassword" layoutX="83.0" layoutY="231.0" prefWidth="290.0" />
+        <Label layoutX="82.0" layoutY="266.0" text="Password again" />
+        <TextField layoutX="82.0" layoutY="297.0" prefHeight="26.0" prefWidth="290.0" />
+        <Button fx:id="editButton" layoutX="420.0" layoutY="82.0" mnemonicParsing="false" onAction="#editUserU" text="Edit" />
+        <Button layoutX="420.0" layoutY="153.0" mnemonicParsing="false" onAction="#backButton" text="Back" />
+        <Label fx:id="editMessage" layoutX="420.0" layoutY="230.0" prefHeight="26.0" prefWidth="165.0" />
+        <Label fx:id="id" layoutX="114.0" layoutY="33.0" prefHeight="18.0" prefWidth="82.0" />
+      <Label layoutX="83.0" layoutY="120.0" text="Name" />
+    </children>
+</AnchorPane>

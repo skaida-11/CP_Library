@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox prefHeight="720.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cp_library.UserAdmin">
+   <children>
+      <TableView fx:id="userTable" prefHeight="720.0" prefWidth="720.0">
+         <columns>
+            <TableColumn prefWidth="207" text="ID">
+               <cellValueFactory>
+                  <PropertyValueFactory property="id" />
+               </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn prefWidth="207" text="Name">
+               <cellValueFactory>
+                  <PropertyValueFactory property="name" />
+               </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn prefWidth="102" text="Attempts">
+               <cellValueFactory>
+                  <PropertyValueFactory property="wrongAttempts" />
+               </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn prefWidth="102" text="Is blocked">
+               <cellValueFactory>
+                  <PropertyValueFactory property="blocked" />
+               </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn prefWidth="102" text="Books">
+               <cellValueFactory>
+                  <PropertyValueFactory property="booksBorrowed" />
+               </cellValueFactory>
+            </TableColumn>
+
+         </columns>
+
+      </TableView>
+      <AnchorPane prefWidth="240">
+         <Button layoutX="40.0" layoutY="188.0" maxWidth="Infinity" onAction="#moveToAddUser" prefHeight="26.0" prefWidth="160.0" text="Add User" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+         <Button layoutX="40.0" layoutY="239.0" maxWidth="Infinity" onAction="#moveToEditUser" prefHeight="26.0" prefWidth="160.0" text="Edit User" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+         <Button layoutX="40.0" layoutY="293.0" maxWidth="Infinity" onAction="#moveToDeleteUser" prefHeight="26.0" prefWidth="160.0" text="Delete User" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+         <Button fx:id="backButton" layoutX="40.0" layoutY="346.0" maxWidth="Infinity" onAction="#backToAdmin" prefHeight="26.0" prefWidth="160.0" text="Back" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+         <Label fx:id="message" layoutX="40.0" layoutY="398.0" prefHeight="18.0" prefWidth="160.0" />
+      </AnchorPane>
+   </children>
+</HBox>

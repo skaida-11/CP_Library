@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cp_library.AdminController">
+   <children>
+      <Button fx:id="adminUser" onAction="#adminToUser" layoutX="122.0" layoutY="100.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="319.0" text="Users" />
+      <Button onAction="#adminToBook" layoutX="122.0" layoutY="151.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="319.0" text="Books" />
+      <Button onAction="#adminBack" layoutX="234.0" layoutY="236.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="95.0" text="Back" />
+   </children>
+</AnchorPane>

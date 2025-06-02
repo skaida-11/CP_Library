@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cp_library.BookAdd">
+   <children>
+
+      <Label layoutX="82.0" layoutY="64.0" prefHeight="18.0" prefWidth="63.0" text="Author" />
+      <TextField fx:id="authorField" layoutX="82.0" layoutY="82.0" prefHeight="26.0" prefWidth="290.0" />
+      <Label layoutX="82.0" layoutY="127.0" prefHeight="18.0" prefWidth="48.0" text="Title" />
+      <TextField fx:id="titleField" layoutX="83.0" layoutY="153.0" prefHeight="26.0" prefWidth="290.0" />
+      <Label layoutX="82.0" layoutY="200.0" prefHeight="18.0" prefWidth="63.0" text="ISBN" />
+      <TextField fx:id="isbnField" layoutX="83.0" layoutY="231.0" prefHeight="26.0" prefWidth="290.0" />
+      <Button layoutX="420.0" layoutY="82.0" mnemonicParsing="false" onAction="#addNewBook" text="Add" />
+      <Button fx:id="backButton" layoutX="420.0" layoutY="153.0" mnemonicParsing="false" onAction="#backToBook" text="Back" />
+      <Label fx:id="addMessage" layoutX="85.0" layoutY="296.0" prefHeight="26.0" prefWidth="383.0" />
+   </children>
+</AnchorPane>

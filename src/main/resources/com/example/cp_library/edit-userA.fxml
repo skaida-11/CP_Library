@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cp_library.UserEdit">
+    <children>
+        <Label layoutX="82.0" layoutY="33.0" prefHeight="18.0" prefWidth="48.0" text="ID" />
+        <Label fx:id="id" layoutX="114.0" layoutY="33.0" prefHeight="18.0" prefWidth="82.0" />
+        <Label layoutX="82.0" layoutY="64.0" prefHeight="18.0" prefWidth="63.0" text="Email" />
+        <TextField fx:id="editEmail" layoutX="82.0" layoutY="82.0" prefHeight="26.0" prefWidth="290.0" />
+        <Label layoutX="83.0" layoutY="128.0" prefHeight="18.0" prefWidth="76.0" text="Name" />
+        <TextField fx:id="editName" layoutX="83.0" layoutY="153.0" prefWidth="290.0" />
+        <Label layoutX="80.0" layoutY="200.0" prefHeight="18.0" prefWidth="100.0" text="New password:" />
+        <Label fx:id="newPassword" layoutX="182.0" layoutY="200.0" prefHeight="18.0" prefWidth="100.0" />
+        <Label layoutX="83.0" layoutY="234.0" prefHeight="18.0" prefWidth="100.0" text="Blocked" />
+        <ChoiceBox fx:id="blocked" layoutX="80.0" layoutY="256.0" prefWidth="150.0" />
+        <Button fx:id="editButton" layoutX="420.0" layoutY="82.0" mnemonicParsing="false" onAction="#editUserA" text="Edit" />
+        <Button layoutX="420.0" layoutY="153.0" mnemonicParsing="false" onAction="#backButton" text="Back" />
+        <Label fx:id="editMessage" layoutX="420.0" layoutY="230.0" prefHeight="26.0" prefWidth="165.0" />
+    </children>
+</AnchorPane>
